@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.hse_reports_api import HseReportsApi
+from hseagent_sdk.api.hse_reports_api import HseReportsApi
 
 
 class TestHseReportsApi(unittest.TestCase):

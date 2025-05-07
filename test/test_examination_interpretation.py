@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.examination_interpretation import ExaminationInterpretation
+from hseagent_sdk.models.examination_interpretation import ExaminationInterpretation
 
 class TestExaminationInterpretation(unittest.TestCase):
     """ExaminationInterpretation unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.final_opinion_enum import FinalOpinionEnum
+from hseagent_sdk.models.final_opinion_enum import FinalOpinionEnum
 
 class TestFinalOpinionEnum(unittest.TestCase):
     """FinalOpinionEnum unit test stubs"""

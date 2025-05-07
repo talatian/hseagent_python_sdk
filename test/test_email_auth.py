@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.email_auth import EmailAuth
+from hseagent_sdk.models.email_auth import EmailAuth
 
 class TestEmailAuth(unittest.TestCase):
     """EmailAuth unit test stubs"""

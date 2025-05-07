@@ -1,4 +1,4 @@
-# openapi_client.ClinicProfileApi
+# hseagent_sdk.ClinicProfileApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,15 +17,15 @@ Method | HTTP request | Description
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.clinic_profile import ClinicProfile
-from openapi_client.models.patched_clinic_profile import PatchedClinicProfile
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.clinic_profile import ClinicProfile
+from hseagent_sdk.models.patched_clinic_profile import PatchedClinicProfile
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -41,10 +41,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClinicProfileApi(api_client)
-    patched_clinic_profile = openapi_client.PatchedClinicProfile() # PatchedClinicProfile |  (optional)
+    api_instance = hseagent_sdk.ClinicProfileApi(api_client)
+    patched_clinic_profile = hseagent_sdk.PatchedClinicProfile() # PatchedClinicProfile |  (optional)
 
     try:
         api_response = api_instance.clinic_profile_partial_update(patched_clinic_profile=patched_clinic_profile)
@@ -92,14 +92,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.clinic_profile import ClinicProfile
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.clinic_profile import ClinicProfile
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -115,9 +115,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClinicProfileApi(api_client)
+    api_instance = hseagent_sdk.ClinicProfileApi(api_client)
 
     try:
         api_response = api_instance.clinic_profile_retrieve()
@@ -162,14 +162,14 @@ This endpoint does not need any parameter.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.clinic_profile import ClinicProfile
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.clinic_profile import ClinicProfile
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -185,10 +185,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ClinicProfileApi(api_client)
-    clinic_profile = openapi_client.ClinicProfile() # ClinicProfile | 
+    api_instance = hseagent_sdk.ClinicProfileApi(api_client)
+    clinic_profile = hseagent_sdk.ClinicProfile() # ClinicProfile | 
 
     try:
         api_response = api_instance.clinic_profile_update(clinic_profile)

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_role import PatchedRole
+from hseagent_sdk.models.patched_role import PatchedRole
 
 class TestPatchedRole(unittest.TestCase):
     """PatchedRole unit test stubs"""

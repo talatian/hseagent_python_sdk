@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.hazard_evaluations_api import HazardEvaluationsApi
+from hseagent_sdk.api.hazard_evaluations_api import HazardEvaluationsApi
 
 
 class TestHazardEvaluationsApi(unittest.TestCase):

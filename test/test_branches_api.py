@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.branches_api import BranchesApi
+from hseagent_sdk.api.branches_api import BranchesApi
 
 
 class TestBranchesApi(unittest.TestCase):

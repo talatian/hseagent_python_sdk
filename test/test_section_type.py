@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.section_type import SectionType
+from hseagent_sdk.models.section_type import SectionType
 
 class TestSectionType(unittest.TestCase):
     """SectionType unit test stubs"""

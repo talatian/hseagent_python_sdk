@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_physician import PatchedPhysician
+from hseagent_sdk.models.patched_physician import PatchedPhysician
 
 class TestPatchedPhysician(unittest.TestCase):
     """PatchedPhysician unit test stubs"""

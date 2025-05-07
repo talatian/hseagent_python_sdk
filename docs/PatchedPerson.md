@@ -30,7 +30,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.patched_person import PatchedPerson
+from hseagent_sdk.models.patched_person import PatchedPerson
 
 # TODO update the JSON string below
 json = "{}"

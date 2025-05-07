@@ -1,4 +1,4 @@
-# openapi_client.AuthApi
+# hseagent_sdk.AuthApi
 
 All URIs are relative to *http://localhost*
 
@@ -22,14 +22,14 @@ This returns a 6-digit callback token we can trade for a user's Auth Token.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.email_auth import EmailAuth
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.email_auth import EmailAuth
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -45,10 +45,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthApi(api_client)
-    email_auth = openapi_client.EmailAuth() # EmailAuth | 
+    api_instance = hseagent_sdk.AuthApi(api_client)
+    email_auth = hseagent_sdk.EmailAuth() # EmailAuth | 
 
     try:
         api_response = api_instance.auth_email_create(email_auth)
@@ -98,14 +98,14 @@ This returns a 6-digit callback token we can trade for a user's Auth Token.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.mobile_auth import MobileAuth
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.mobile_auth import MobileAuth
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -121,10 +121,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthApi(api_client)
-    mobile_auth = openapi_client.MobileAuth() # MobileAuth | 
+    api_instance = hseagent_sdk.AuthApi(api_client)
+    mobile_auth = hseagent_sdk.MobileAuth() # MobileAuth | 
 
     try:
         api_response = api_instance.auth_mobile_create(mobile_auth)
@@ -175,14 +175,14 @@ Instead, this returns an Auth Token based on our callback token and source.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.callback_token_auth import CallbackTokenAuth
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.callback_token_auth import CallbackTokenAuth
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -198,10 +198,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthApi(api_client)
-    callback_token_auth = openapi_client.CallbackTokenAuth() # CallbackTokenAuth | 
+    api_instance = hseagent_sdk.AuthApi(api_client)
+    callback_token_auth = hseagent_sdk.CallbackTokenAuth() # CallbackTokenAuth | 
 
     try:
         api_response = api_instance.auth_token_create(callback_token_auth)
@@ -252,14 +252,14 @@ Should be refactored at some point.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.callback_token_verification import CallbackTokenVerification
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.callback_token_verification import CallbackTokenVerification
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -275,10 +275,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthApi(api_client)
-    callback_token_verification = openapi_client.CallbackTokenVerification() # CallbackTokenVerification | 
+    api_instance = hseagent_sdk.AuthApi(api_client)
+    callback_token_verification = hseagent_sdk.CallbackTokenVerification() # CallbackTokenVerification | 
 
     try:
         api_response = api_instance.auth_verify_create(callback_token_verification)
@@ -328,13 +328,13 @@ This returns a 6-digit callback token we can trade for a user's Auth Token.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -350,9 +350,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthApi(api_client)
+    api_instance = hseagent_sdk.AuthApi(api_client)
 
     try:
         api_instance.auth_verify_email_create()
@@ -397,13 +397,13 @@ This returns a 6-digit callback token we can trade for a user's Auth Token.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -419,9 +419,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthApi(api_client)
+    api_instance = hseagent_sdk.AuthApi(api_client)
 
     try:
         api_instance.auth_verify_mobile_create()

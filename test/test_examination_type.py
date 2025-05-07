@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.examination_type import ExaminationType
+from hseagent_sdk.models.examination_type import ExaminationType
 
 class TestExaminationType(unittest.TestCase):
     """ExaminationType unit test stubs"""

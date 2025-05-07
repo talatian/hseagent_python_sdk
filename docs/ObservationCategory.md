@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.observation_category import ObservationCategory
+from hseagent_sdk.models.observation_category import ObservationCategory
 
 # TODO update the JSON string below
 json = "{}"

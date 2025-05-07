@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_physician_gender import PatchedPhysicianGender
+from hseagent_sdk.models.patched_physician_gender import PatchedPhysicianGender
 
 class TestPatchedPhysicianGender(unittest.TestCase):
     """PatchedPhysicianGender unit test stubs"""

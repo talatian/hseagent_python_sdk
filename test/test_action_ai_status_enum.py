@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.action_ai_status_enum import ActionAIStatusEnum
+from hseagent_sdk.models.action_ai_status_enum import ActionAIStatusEnum
 
 class TestActionAIStatusEnum(unittest.TestCase):
     """ActionAIStatusEnum unit test stubs"""

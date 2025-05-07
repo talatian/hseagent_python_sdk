@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.value_type_enum import ValueTypeEnum
+from hseagent_sdk.models.value_type_enum import ValueTypeEnum
 
 class TestValueTypeEnum(unittest.TestCase):
     """ValueTypeEnum unit test stubs"""

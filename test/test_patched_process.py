@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_process import PatchedProcess
+from hseagent_sdk.models.patched_process import PatchedProcess
 
 class TestPatchedProcess(unittest.TestCase):
     """PatchedProcess unit test stubs"""
@@ -39,15 +39,15 @@ class TestPatchedProcess(unittest.TestCase):
                 name = '',
                 description = '',
                 hazards = [
-                    openapi_client.models.observation_type.ObservationType(
+                    hseagent_sdk.models.observation_type.ObservationType(
                         id = 56, 
                         sections = [
-                            openapi_client.models.section.Section(
+                            hseagent_sdk.models.section.Section(
                                 id = 56, 
                                 name = '', 
                                 code = '', 
                                 description = '', 
-                                section_type = openapi_client.models.section_type.SectionType(
+                                section_type = hseagent_sdk.models.section_type.SectionType(
                                     id = 56, 
                                     name = '', 
                                     code = '', 
@@ -63,7 +63,7 @@ class TestPatchedProcess(unittest.TestCase):
                         unit = '', 
                         hint = '', 
                         examination_types = [
-                            openapi_client.models.examination_type.ExaminationType(
+                            hseagent_sdk.models.examination_type.ExaminationType(
                                 id = 56, 
                                 name = '', 
                                 parent = '', 

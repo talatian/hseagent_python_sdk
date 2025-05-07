@@ -1,4 +1,4 @@
-# openapi_client.HazardEvaluationsApi
+# hseagent_sdk.HazardEvaluationsApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,14 +20,14 @@ Method | HTTP request | Description
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.hazard_evaluation import HazardEvaluation
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.hazard_evaluation import HazardEvaluation
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -43,10 +43,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HazardEvaluationsApi(api_client)
-    hazard_evaluation = openapi_client.HazardEvaluation() # HazardEvaluation | 
+    api_instance = hseagent_sdk.HazardEvaluationsApi(api_client)
+    hazard_evaluation = hseagent_sdk.HazardEvaluation() # HazardEvaluation | 
 
     try:
         api_response = api_instance.hazard_evaluations_create(hazard_evaluation)
@@ -94,13 +94,13 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -116,9 +116,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HazardEvaluationsApi(api_client)
+    api_instance = hseagent_sdk.HazardEvaluationsApi(api_client)
     id = 56 # int | A unique integer value identifying this examination.
 
     try:
@@ -165,14 +165,14 @@ void (empty response body)
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.hazard_evaluation import HazardEvaluation
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.hazard_evaluation import HazardEvaluation
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -188,9 +188,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HazardEvaluationsApi(api_client)
+    api_instance = hseagent_sdk.HazardEvaluationsApi(api_client)
     employment_history = 'employment_history_example' # str |  (optional)
     examination_type__code = ['examination_type__code_example'] # List[Optional[str]] | ممکن است چندین مقدار با کاما از هم جدا شوند. (optional)
     person = 56 # int |  (optional)
@@ -243,15 +243,15 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.hazard_evaluation import HazardEvaluation
-from openapi_client.models.patched_hazard_evaluation import PatchedHazardEvaluation
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.hazard_evaluation import HazardEvaluation
+from hseagent_sdk.models.patched_hazard_evaluation import PatchedHazardEvaluation
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -267,11 +267,11 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HazardEvaluationsApi(api_client)
+    api_instance = hseagent_sdk.HazardEvaluationsApi(api_client)
     id = 56 # int | A unique integer value identifying this examination.
-    patched_hazard_evaluation = openapi_client.PatchedHazardEvaluation() # PatchedHazardEvaluation |  (optional)
+    patched_hazard_evaluation = hseagent_sdk.PatchedHazardEvaluation() # PatchedHazardEvaluation |  (optional)
 
     try:
         api_response = api_instance.hazard_evaluations_partial_update(id, patched_hazard_evaluation=patched_hazard_evaluation)
@@ -320,14 +320,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.hazard_evaluation import HazardEvaluation
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.hazard_evaluation import HazardEvaluation
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -343,9 +343,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HazardEvaluationsApi(api_client)
+    api_instance = hseagent_sdk.HazardEvaluationsApi(api_client)
     id = 56 # int | A unique integer value identifying this examination.
 
     try:
@@ -394,14 +394,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.hazard_evaluation import HazardEvaluation
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.hazard_evaluation import HazardEvaluation
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -417,11 +417,11 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HazardEvaluationsApi(api_client)
+    api_instance = hseagent_sdk.HazardEvaluationsApi(api_client)
     id = 56 # int | A unique integer value identifying this examination.
-    hazard_evaluation = openapi_client.HazardEvaluation() # HazardEvaluation | 
+    hazard_evaluation = hseagent_sdk.HazardEvaluation() # HazardEvaluation | 
 
     try:
         api_response = api_instance.hazard_evaluations_update(id, hazard_evaluation)

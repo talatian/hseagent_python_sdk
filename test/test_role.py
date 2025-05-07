@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.role import Role
+from hseagent_sdk.models.role import Role
 
 class TestRole(unittest.TestCase):
     """Role unit test stubs"""

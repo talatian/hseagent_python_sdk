@@ -1,4 +1,4 @@
-# openapi_client.PersonsApi
+# hseagent_sdk.PersonsApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,14 +20,14 @@ Method | HTTP request | Description
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.person import Person
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.person import Person
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -43,10 +43,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersonsApi(api_client)
-    person = openapi_client.Person() # Person | 
+    api_instance = hseagent_sdk.PersonsApi(api_client)
+    person = hseagent_sdk.Person() # Person | 
 
     try:
         api_response = api_instance.persons_create(person)
@@ -94,13 +94,13 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -116,9 +116,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersonsApi(api_client)
+    api_instance = hseagent_sdk.PersonsApi(api_client)
     id = 56 # int | A unique integer value identifying this کارمند.
 
     try:
@@ -165,14 +165,14 @@ void (empty response body)
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.person import Person
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.person import Person
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -188,9 +188,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersonsApi(api_client)
+    api_instance = hseagent_sdk.PersonsApi(api_client)
     organization = 56 # int |  (optional)
 
     try:
@@ -239,15 +239,15 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.patched_person import PatchedPerson
-from openapi_client.models.person import Person
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.patched_person import PatchedPerson
+from hseagent_sdk.models.person import Person
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -263,11 +263,11 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersonsApi(api_client)
+    api_instance = hseagent_sdk.PersonsApi(api_client)
     id = 56 # int | A unique integer value identifying this کارمند.
-    patched_person = openapi_client.PatchedPerson() # PatchedPerson |  (optional)
+    patched_person = hseagent_sdk.PatchedPerson() # PatchedPerson |  (optional)
 
     try:
         api_response = api_instance.persons_partial_update(id, patched_person=patched_person)
@@ -316,14 +316,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.person import Person
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.person import Person
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -339,9 +339,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersonsApi(api_client)
+    api_instance = hseagent_sdk.PersonsApi(api_client)
     id = 56 # int | A unique integer value identifying this کارمند.
 
     try:
@@ -390,14 +390,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.person import Person
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.person import Person
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -413,11 +413,11 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.PersonsApi(api_client)
+    api_instance = hseagent_sdk.PersonsApi(api_client)
     id = 56 # int | A unique integer value identifying this کارمند.
-    person = openapi_client.Person() # Person | 
+    person = hseagent_sdk.Person() # Person | 
 
     try:
         api_response = api_instance.persons_update(id, person)

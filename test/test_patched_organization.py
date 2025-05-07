@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_organization import PatchedOrganization
+from hseagent_sdk.models.patched_organization import PatchedOrganization
 
 class TestPatchedOrganization(unittest.TestCase):
     """PatchedOrganization unit test stubs"""

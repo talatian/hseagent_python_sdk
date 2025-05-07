@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.physicians_api import PhysiciansApi
+from hseagent_sdk.api.physicians_api import PhysiciansApi
 
 
 class TestPhysiciansApi(unittest.TestCase):

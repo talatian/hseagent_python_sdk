@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.examinations_api import ExaminationsApi
+from hseagent_sdk.api.examinations_api import ExaminationsApi
 
 
 class TestExaminationsApi(unittest.TestCase):

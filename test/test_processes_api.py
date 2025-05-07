@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.processes_api import ProcessesApi
+from hseagent_sdk.api.processes_api import ProcessesApi
 
 
 class TestProcessesApi(unittest.TestCase):

@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.physician import Physician
+from hseagent_sdk.models.physician import Physician
 
 # TODO update the JSON string below
 json = "{}"

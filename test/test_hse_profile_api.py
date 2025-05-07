@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.hse_profile_api import HseProfileApi
+from hseagent_sdk.api.hse_profile_api import HseProfileApi
 
 
 class TestHseProfileApi(unittest.TestCase):

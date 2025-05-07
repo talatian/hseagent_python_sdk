@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_hse_report import PatchedHSEReport
+from hseagent_sdk.models.patched_hse_report import PatchedHSEReport
 
 class TestPatchedHSEReport(unittest.TestCase):
     """PatchedHSEReport unit test stubs"""
@@ -38,7 +38,7 @@ class TestPatchedHSEReport(unittest.TestCase):
                 id = 56,
                 person = 56,
                 physician_id = 56,
-                physician = openapi_client.models.physician.Physician(
+                physician = hseagent_sdk.models.physician.Physician(
                     id = 56, 
                     first_name = '', 
                     last_name = '', 
@@ -53,10 +53,10 @@ class TestPatchedHSEReport(unittest.TestCase):
                     updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                     occupational_clinic = 56, ),
                 examinations = [
-                    openapi_client.models.examination.Examination(
+                    hseagent_sdk.models.examination.Examination(
                         id = 56, 
                         observations = [
-                            openapi_client.models.nested_observation.NestedObservation(
+                            hseagent_sdk.models.nested_observation.NestedObservation(
                                 observation_type = null, 
                                 observation_type_id = 56, 
                                 value = '', 

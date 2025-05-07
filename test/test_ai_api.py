@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.ai_api import AiApi
+from hseagent_sdk.api.ai_api import AiApi
 
 
 class TestAiApi(unittest.TestCase):

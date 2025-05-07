@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.hse_report_status_enum import HSEReportStatusEnum
+from hseagent_sdk.models.hse_report_status_enum import HSEReportStatusEnum
 
 class TestHSEReportStatusEnum(unittest.TestCase):
     """HSEReportStatusEnum unit test stubs"""

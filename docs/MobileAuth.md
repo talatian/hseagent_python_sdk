@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.mobile_auth import MobileAuth
+from hseagent_sdk.models.mobile_auth import MobileAuth
 
 # TODO update the JSON string below
 json = "{}"

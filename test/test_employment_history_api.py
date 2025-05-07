@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.employment_history_api import EmploymentHistoryApi
+from hseagent_sdk.api.employment_history_api import EmploymentHistoryApi
 
 
 class TestEmploymentHistoryApi(unittest.TestCase):

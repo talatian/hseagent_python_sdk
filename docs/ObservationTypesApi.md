@@ -1,4 +1,4 @@
-# openapi_client.ObservationTypesApi
+# hseagent_sdk.ObservationTypesApi
 
 All URIs are relative to *http://localhost*
 
@@ -16,14 +16,14 @@ Method | HTTP request | Description
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.observation_type import ObservationType
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.observation_type import ObservationType
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -39,9 +39,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ObservationTypesApi(api_client)
+    api_instance = hseagent_sdk.ObservationTypesApi(api_client)
     category__code = 'category__code_example' # str |  (optional)
     code = 'code_example' # str |  (optional)
     examination_types__code = 'examination_types__code_example' # str |  (optional)
@@ -96,14 +96,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.observation_type import ObservationType
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.observation_type import ObservationType
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -119,9 +119,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ObservationTypesApi(api_client)
+    api_instance = hseagent_sdk.ObservationTypesApi(api_client)
     id = 56 # int | A unique integer value identifying this observation type.
 
     try:

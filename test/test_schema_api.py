@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.schema_api import SchemaApi
+from hseagent_sdk.api.schema_api import SchemaApi
 
 
 class TestSchemaApi(unittest.TestCase):

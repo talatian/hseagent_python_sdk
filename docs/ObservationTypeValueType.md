@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.observation_type_value_type import ObservationTypeValueType
+from hseagent_sdk.models.observation_type_value_type import ObservationTypeValueType
 
 # TODO update the JSON string below
 json = "{}"

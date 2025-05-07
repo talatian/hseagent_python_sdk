@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.persons_api import PersonsApi
+from hseagent_sdk.api.persons_api import PersonsApi
 
 
 class TestPersonsApi(unittest.TestCase):

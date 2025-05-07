@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.observation_types_api import ObservationTypesApi
+from hseagent_sdk.api.observation_types_api import ObservationTypesApi
 
 
 class TestObservationTypesApi(unittest.TestCase):

@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.profile import Profile
+from hseagent_sdk.models.profile import Profile
 
 # TODO update the JSON string below
 json = "{}"

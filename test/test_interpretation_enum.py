@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.interpretation_enum import InterpretationEnum
+from hseagent_sdk.models.interpretation_enum import InterpretationEnum
 
 class TestInterpretationEnum(unittest.TestCase):
     """InterpretationEnum unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_person_education_level import PatchedPersonEducationLevel
+from hseagent_sdk.models.patched_person_education_level import PatchedPersonEducationLevel
 
 class TestPatchedPersonEducationLevel(unittest.TestCase):
     """PatchedPersonEducationLevel unit test stubs"""

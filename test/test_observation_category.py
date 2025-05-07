@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.observation_category import ObservationCategory
+from hseagent_sdk.models.observation_category import ObservationCategory
 
 class TestObservationCategory(unittest.TestCase):
     """ObservationCategory unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.section import Section
+from hseagent_sdk.models.section import Section
 
 class TestSection(unittest.TestCase):
     """Section unit test stubs"""
@@ -39,7 +39,7 @@ class TestSection(unittest.TestCase):
                 name = '',
                 code = '',
                 description = '',
-                section_type = openapi_client.models.section_type.SectionType(
+                section_type = hseagent_sdk.models.section_type.SectionType(
                     id = 56, 
                     name = '', 
                     code = '', 
@@ -49,7 +49,7 @@ class TestSection(unittest.TestCase):
             return Section(
                 id = 56,
                 name = '',
-                section_type = openapi_client.models.section_type.SectionType(
+                section_type = hseagent_sdk.models.section_type.SectionType(
                     id = 56, 
                     name = '', 
                     code = '', 

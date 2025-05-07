@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_clinic_profile import PatchedClinicProfile
+from hseagent_sdk.models.patched_clinic_profile import PatchedClinicProfile
 
 class TestPatchedClinicProfile(unittest.TestCase):
     """PatchedClinicProfile unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.departments_api import DepartmentsApi
+from hseagent_sdk.api.departments_api import DepartmentsApi
 
 
 class TestDepartmentsApi(unittest.TestCase):

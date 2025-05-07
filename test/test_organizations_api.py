@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.organizations_api import OrganizationsApi
+from hseagent_sdk.api.organizations_api import OrganizationsApi
 
 
 class TestOrganizationsApi(unittest.TestCase):

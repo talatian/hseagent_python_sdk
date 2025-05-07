@@ -1,4 +1,4 @@
-# openapi_client.EmploymentHistoryApi
+# hseagent_sdk.EmploymentHistoryApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,14 +20,14 @@ Method | HTTP request | Description
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.employment_history import EmploymentHistory
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.employment_history import EmploymentHistory
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -43,10 +43,10 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EmploymentHistoryApi(api_client)
-    employment_history = openapi_client.EmploymentHistory() # EmploymentHistory | 
+    api_instance = hseagent_sdk.EmploymentHistoryApi(api_client)
+    employment_history = hseagent_sdk.EmploymentHistory() # EmploymentHistory | 
 
     try:
         api_response = api_instance.employment_history_create(employment_history)
@@ -94,13 +94,13 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -116,9 +116,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EmploymentHistoryApi(api_client)
+    api_instance = hseagent_sdk.EmploymentHistoryApi(api_client)
     id = 56 # int | A unique integer value identifying this سابقه شغلی.
 
     try:
@@ -165,14 +165,14 @@ void (empty response body)
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.employment_history import EmploymentHistory
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.employment_history import EmploymentHistory
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -188,9 +188,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EmploymentHistoryApi(api_client)
+    api_instance = hseagent_sdk.EmploymentHistoryApi(api_client)
     person = 56 # int |  (optional)
 
     try:
@@ -239,15 +239,15 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.employment_history import EmploymentHistory
-from openapi_client.models.patched_employment_history import PatchedEmploymentHistory
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.employment_history import EmploymentHistory
+from hseagent_sdk.models.patched_employment_history import PatchedEmploymentHistory
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -263,11 +263,11 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EmploymentHistoryApi(api_client)
+    api_instance = hseagent_sdk.EmploymentHistoryApi(api_client)
     id = 56 # int | A unique integer value identifying this سابقه شغلی.
-    patched_employment_history = openapi_client.PatchedEmploymentHistory() # PatchedEmploymentHistory |  (optional)
+    patched_employment_history = hseagent_sdk.PatchedEmploymentHistory() # PatchedEmploymentHistory |  (optional)
 
     try:
         api_response = api_instance.employment_history_partial_update(id, patched_employment_history=patched_employment_history)
@@ -316,14 +316,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.employment_history import EmploymentHistory
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.employment_history import EmploymentHistory
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -339,9 +339,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EmploymentHistoryApi(api_client)
+    api_instance = hseagent_sdk.EmploymentHistoryApi(api_client)
     id = 56 # int | A unique integer value identifying this سابقه شغلی.
 
     try:
@@ -390,14 +390,14 @@ Name | Type | Description  | Notes
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.models.employment_history import EmploymentHistory
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.models.employment_history import EmploymentHistory
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -413,11 +413,11 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.EmploymentHistoryApi(api_client)
+    api_instance = hseagent_sdk.EmploymentHistoryApi(api_client)
     id = 56 # int | A unique integer value identifying this سابقه شغلی.
-    employment_history = openapi_client.EmploymentHistory() # EmploymentHistory | 
+    employment_history = hseagent_sdk.EmploymentHistory() # EmploymentHistory | 
 
     try:
         api_response = api_instance.employment_history_update(id, employment_history)

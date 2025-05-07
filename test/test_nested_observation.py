@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.nested_observation import NestedObservation
+from hseagent_sdk.models.nested_observation import NestedObservation
 
 class TestNestedObservation(unittest.TestCase):
     """NestedObservation unit test stubs"""
@@ -35,15 +35,15 @@ class TestNestedObservation(unittest.TestCase):
         model = NestedObservation()
         if include_optional:
             return NestedObservation(
-                observation_type = openapi_client.models.observation_type.ObservationType(
+                observation_type = hseagent_sdk.models.observation_type.ObservationType(
                     id = 56, 
                     sections = [
-                        openapi_client.models.section.Section(
+                        hseagent_sdk.models.section.Section(
                             id = 56, 
                             name = '', 
                             code = '', 
                             description = '', 
-                            section_type = openapi_client.models.section_type.SectionType(
+                            section_type = hseagent_sdk.models.section_type.SectionType(
                                 id = 56, 
                                 name = '', 
                                 code = '', 
@@ -59,7 +59,7 @@ class TestNestedObservation(unittest.TestCase):
                     unit = '', 
                     hint = '', 
                     examination_types = [
-                        openapi_client.models.examination_type.ExaminationType(
+                        hseagent_sdk.models.examination_type.ExaminationType(
                             id = 56, 
                             name = '', 
                             parent = '', 
@@ -76,15 +76,15 @@ class TestNestedObservation(unittest.TestCase):
             )
         else:
             return NestedObservation(
-                observation_type = openapi_client.models.observation_type.ObservationType(
+                observation_type = hseagent_sdk.models.observation_type.ObservationType(
                     id = 56, 
                     sections = [
-                        openapi_client.models.section.Section(
+                        hseagent_sdk.models.section.Section(
                             id = 56, 
                             name = '', 
                             code = '', 
                             description = '', 
-                            section_type = openapi_client.models.section_type.SectionType(
+                            section_type = hseagent_sdk.models.section_type.SectionType(
                                 id = 56, 
                                 name = '', 
                                 code = '', 
@@ -100,7 +100,7 @@ class TestNestedObservation(unittest.TestCase):
                     unit = '', 
                     hint = '', 
                     examination_types = [
-                        openapi_client.models.examination_type.ExaminationType(
+                        hseagent_sdk.models.examination_type.ExaminationType(
                             id = 56, 
                             name = '', 
                             parent = '', 

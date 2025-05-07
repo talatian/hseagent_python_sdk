@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.observation_type import ObservationType
+from hseagent_sdk.models.observation_type import ObservationType
 
 class TestObservationType(unittest.TestCase):
     """ObservationType unit test stubs"""
@@ -37,12 +37,12 @@ class TestObservationType(unittest.TestCase):
             return ObservationType(
                 id = 56,
                 sections = [
-                    openapi_client.models.section.Section(
+                    hseagent_sdk.models.section.Section(
                         id = 56, 
                         name = '', 
                         code = '', 
                         description = '', 
-                        section_type = openapi_client.models.section_type.SectionType(
+                        section_type = hseagent_sdk.models.section_type.SectionType(
                             id = 56, 
                             name = '', 
                             code = '', 
@@ -54,7 +54,7 @@ class TestObservationType(unittest.TestCase):
                 required = True,
                 var_schema = None,
                 value_type = None,
-                category = openapi_client.models.observation_category.ObservationCategory(
+                category = hseagent_sdk.models.observation_category.ObservationCategory(
                     id = 56, 
                     name = '', 
                     description = '', 
@@ -62,7 +62,7 @@ class TestObservationType(unittest.TestCase):
                 unit = '',
                 hint = '',
                 examination_types = [
-                    openapi_client.models.examination_type.ExaminationType(
+                    hseagent_sdk.models.examination_type.ExaminationType(
                         id = 56, 
                         name = '', 
                         parent = '', 
@@ -74,25 +74,25 @@ class TestObservationType(unittest.TestCase):
             return ObservationType(
                 id = 56,
                 sections = [
-                    openapi_client.models.section.Section(
+                    hseagent_sdk.models.section.Section(
                         id = 56, 
                         name = '', 
                         code = '', 
                         description = '', 
-                        section_type = openapi_client.models.section_type.SectionType(
+                        section_type = hseagent_sdk.models.section_type.SectionType(
                             id = 56, 
                             name = '', 
                             code = '', 
                             description = '', ), )
                     ],
                 name = '',
-                category = openapi_client.models.observation_category.ObservationCategory(
+                category = hseagent_sdk.models.observation_category.ObservationCategory(
                     id = 56, 
                     name = '', 
                     description = '', 
                     code = '', ),
                 examination_types = [
-                    openapi_client.models.examination_type.ExaminationType(
+                    hseagent_sdk.models.examination_type.ExaminationType(
                         id = 56, 
                         name = '', 
                         parent = '', 

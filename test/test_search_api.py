@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.search_api import SearchApi
+from hseagent_sdk.api.search_api import SearchApi
 
 
 class TestSearchApi(unittest.TestCase):

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.uploads_api import UploadsApi
+from hseagent_sdk.api.uploads_api import UploadsApi
 
 
 class TestUploadsApi(unittest.TestCase):

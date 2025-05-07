@@ -1,4 +1,4 @@
-# openapi_client.SchemaApi
+# hseagent_sdk.SchemaApi
 
 All URIs are relative to *http://localhost*
 
@@ -20,13 +20,13 @@ OpenApi3 schema for this API. Format can be selected via content negotiation.
 * Api Key Authentication (tokenAuth):
 
 ```python
-import openapi_client
-from openapi_client.rest import ApiException
+import hseagent_sdk
+from hseagent_sdk.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = hseagent_sdk.Configuration(
     host = "http://localhost"
 )
 
@@ -42,9 +42,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with hseagent_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.SchemaApi(api_client)
+    api_instance = hseagent_sdk.SchemaApi(api_client)
     format = 'format_example' # str |  (optional)
     lang = 'lang_example' # str |  (optional)
 

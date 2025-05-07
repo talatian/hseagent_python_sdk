@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.branch import Branch
+from hseagent_sdk.models.branch import Branch
 
 class TestBranch(unittest.TestCase):
     """Branch unit test stubs"""

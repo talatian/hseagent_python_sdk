@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.mobile_auth import MobileAuth
+from hseagent_sdk.models.mobile_auth import MobileAuth
 
 class TestMobileAuth(unittest.TestCase):
     """MobileAuth unit test stubs"""

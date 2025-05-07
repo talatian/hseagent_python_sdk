@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.military_service_enum import MilitaryServiceEnum
+from hseagent_sdk.models.military_service_enum import MilitaryServiceEnum
 
 class TestMilitaryServiceEnum(unittest.TestCase):
     """MilitaryServiceEnum unit test stubs"""

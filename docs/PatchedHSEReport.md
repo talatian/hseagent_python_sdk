@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.patched_hse_report import PatchedHSEReport
+from hseagent_sdk.models.patched_hse_report import PatchedHSEReport
 
 # TODO update the JSON string below
 json = "{}"

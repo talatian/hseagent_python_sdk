@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.gender_enum import GenderEnum
+from hseagent_sdk.models.gender_enum import GenderEnum
 
 class TestGenderEnum(unittest.TestCase):
     """GenderEnum unit test stubs"""

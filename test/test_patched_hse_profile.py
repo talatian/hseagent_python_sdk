@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_hse_profile import PatchedHSEProfile
+from hseagent_sdk.models.patched_hse_profile import PatchedHSEProfile
 
 class TestPatchedHSEProfile(unittest.TestCase):
     """PatchedHSEProfile unit test stubs"""

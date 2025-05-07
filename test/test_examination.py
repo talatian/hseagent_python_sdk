@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.examination import Examination
+from hseagent_sdk.models.examination import Examination
 
 class TestExamination(unittest.TestCase):
     """Examination unit test stubs"""
@@ -37,7 +37,7 @@ class TestExamination(unittest.TestCase):
             return Examination(
                 id = 56,
                 observations = [
-                    openapi_client.models.nested_observation.NestedObservation(
+                    hseagent_sdk.models.nested_observation.NestedObservation(
                         observation_type = null, 
                         observation_type_id = 56, 
                         value = '', 
@@ -47,7 +47,7 @@ class TestExamination(unittest.TestCase):
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                     ],
-                examination_type = openapi_client.models.examination_type.ExaminationType(
+                examination_type = hseagent_sdk.models.examination_type.ExaminationType(
                     id = 56, 
                     name = '', 
                     parent = '', 
@@ -56,7 +56,7 @@ class TestExamination(unittest.TestCase):
                 examination_type_id = 56,
                 person_id = 56,
                 physician_id = 56,
-                physician = openapi_client.models.physician.Physician(
+                physician = hseagent_sdk.models.physician.Physician(
                     id = 56, 
                     first_name = '', 
                     last_name = '', 
@@ -83,7 +83,7 @@ class TestExamination(unittest.TestCase):
             return Examination(
                 id = 56,
                 observations = [
-                    openapi_client.models.nested_observation.NestedObservation(
+                    hseagent_sdk.models.nested_observation.NestedObservation(
                         observation_type = null, 
                         observation_type_id = 56, 
                         value = '', 
@@ -93,7 +93,7 @@ class TestExamination(unittest.TestCase):
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                     ],
-                examination_type = openapi_client.models.examination_type.ExaminationType(
+                examination_type = hseagent_sdk.models.examination_type.ExaminationType(
                     id = 56, 
                     name = '', 
                     parent = '', 
@@ -101,7 +101,7 @@ class TestExamination(unittest.TestCase):
                     code = '', ),
                 examination_type_id = 56,
                 person_id = 56,
-                physician = openapi_client.models.physician.Physician(
+                physician = hseagent_sdk.models.physician.Physician(
                     id = 56, 
                     first_name = '', 
                     last_name = '', 

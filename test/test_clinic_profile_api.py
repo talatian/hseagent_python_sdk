@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.clinic_profile_api import ClinicProfileApi
+from hseagent_sdk.api.clinic_profile_api import ClinicProfileApi
 
 
 class TestClinicProfileApi(unittest.TestCase):

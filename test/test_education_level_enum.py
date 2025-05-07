@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.education_level_enum import EducationLevelEnum
+from hseagent_sdk.models.education_level_enum import EducationLevelEnum
 
 class TestEducationLevelEnum(unittest.TestCase):
     """EducationLevelEnum unit test stubs"""

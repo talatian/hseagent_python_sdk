@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.nested_observation import NestedObservation
+from hseagent_sdk.models.nested_observation import NestedObservation
 
 # TODO update the JSON string below
 json = "{}"

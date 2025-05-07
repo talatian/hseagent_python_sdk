@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_department import PatchedDepartment
+from hseagent_sdk.models.patched_department import PatchedDepartment
 
 class TestPatchedDepartment(unittest.TestCase):
     """PatchedDepartment unit test stubs"""

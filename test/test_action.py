@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.action import Action
+from hseagent_sdk.models.action import Action
 
 class TestAction(unittest.TestCase):
     """Action unit test stubs"""
@@ -36,15 +36,15 @@ class TestAction(unittest.TestCase):
         if include_optional:
             return Action(
                 id = 56,
-                action_type = openapi_client.models.observation_type.ObservationType(
+                action_type = hseagent_sdk.models.observation_type.ObservationType(
                     id = 56, 
                     sections = [
-                        openapi_client.models.section.Section(
+                        hseagent_sdk.models.section.Section(
                             id = 56, 
                             name = '', 
                             code = '', 
                             description = '', 
-                            section_type = openapi_client.models.section_type.SectionType(
+                            section_type = hseagent_sdk.models.section_type.SectionType(
                                 id = 56, 
                                 name = '', 
                                 code = '', 
@@ -60,7 +60,7 @@ class TestAction(unittest.TestCase):
                     unit = '', 
                     hint = '', 
                     examination_types = [
-                        openapi_client.models.examination_type.ExaminationType(
+                        hseagent_sdk.models.examination_type.ExaminationType(
                             id = 56, 
                             name = '', 
                             parent = '', 
@@ -68,10 +68,10 @@ class TestAction(unittest.TestCase):
                             code = '', )
                         ], ),
                 person = 56,
-                based_on_examination = openapi_client.models.examination.Examination(
+                based_on_examination = hseagent_sdk.models.examination.Examination(
                     id = 56, 
                     observations = [
-                        openapi_client.models.nested_observation.NestedObservation(
+                        hseagent_sdk.models.nested_observation.NestedObservation(
                             observation_type = null, 
                             observation_type_id = 56, 
                             value = '', 
@@ -94,16 +94,16 @@ class TestAction(unittest.TestCase):
                     actions = [
                         56
                         ], ),
-                based_on_report = openapi_client.models.hse_report.HSEReport(
+                based_on_report = hseagent_sdk.models.hse_report.HSEReport(
                     id = 56, 
                     person = 56, 
                     physician_id = 56, 
                     physician = null, 
                     examinations = [
-                        openapi_client.models.examination.Examination(
+                        hseagent_sdk.models.examination.Examination(
                             id = 56, 
                             observations = [
-                                openapi_client.models.nested_observation.NestedObservation(
+                                hseagent_sdk.models.nested_observation.NestedObservation(
                                     observation_type = null, 
                                     observation_type_id = 56, 
                                     value = '', 
@@ -152,15 +152,15 @@ class TestAction(unittest.TestCase):
         else:
             return Action(
                 id = 56,
-                action_type = openapi_client.models.observation_type.ObservationType(
+                action_type = hseagent_sdk.models.observation_type.ObservationType(
                     id = 56, 
                     sections = [
-                        openapi_client.models.section.Section(
+                        hseagent_sdk.models.section.Section(
                             id = 56, 
                             name = '', 
                             code = '', 
                             description = '', 
-                            section_type = openapi_client.models.section_type.SectionType(
+                            section_type = hseagent_sdk.models.section_type.SectionType(
                                 id = 56, 
                                 name = '', 
                                 code = '', 
@@ -176,17 +176,17 @@ class TestAction(unittest.TestCase):
                     unit = '', 
                     hint = '', 
                     examination_types = [
-                        openapi_client.models.examination_type.ExaminationType(
+                        hseagent_sdk.models.examination_type.ExaminationType(
                             id = 56, 
                             name = '', 
                             parent = '', 
                             description = '', 
                             code = '', )
                         ], ),
-                based_on_examination = openapi_client.models.examination.Examination(
+                based_on_examination = hseagent_sdk.models.examination.Examination(
                     id = 56, 
                     observations = [
-                        openapi_client.models.nested_observation.NestedObservation(
+                        hseagent_sdk.models.nested_observation.NestedObservation(
                             observation_type = null, 
                             observation_type_id = 56, 
                             value = '', 
@@ -209,16 +209,16 @@ class TestAction(unittest.TestCase):
                     actions = [
                         56
                         ], ),
-                based_on_report = openapi_client.models.hse_report.HSEReport(
+                based_on_report = hseagent_sdk.models.hse_report.HSEReport(
                     id = 56, 
                     person = 56, 
                     physician_id = 56, 
                     physician = null, 
                     examinations = [
-                        openapi_client.models.examination.Examination(
+                        hseagent_sdk.models.examination.Examination(
                             id = 56, 
                             observations = [
-                                openapi_client.models.nested_observation.NestedObservation(
+                                hseagent_sdk.models.nested_observation.NestedObservation(
                                     observation_type = null, 
                                     observation_type_id = 56, 
                                     value = '', 

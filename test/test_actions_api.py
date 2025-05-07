@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.actions_api import ActionsApi
+from hseagent_sdk.api.actions_api import ActionsApi
 
 
 class TestActionsApi(unittest.TestCase):

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.null_enum import NullEnum
+from hseagent_sdk.models.null_enum import NullEnum
 
 class TestNullEnum(unittest.TestCase):
     """NullEnum unit test stubs"""

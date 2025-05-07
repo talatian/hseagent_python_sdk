@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_hazard_evaluation import PatchedHazardEvaluation
+from hseagent_sdk.models.patched_hazard_evaluation import PatchedHazardEvaluation
 
 class TestPatchedHazardEvaluation(unittest.TestCase):
     """PatchedHazardEvaluation unit test stubs"""
@@ -37,7 +37,7 @@ class TestPatchedHazardEvaluation(unittest.TestCase):
             return PatchedHazardEvaluation(
                 id = 56,
                 observations = [
-                    openapi_client.models.nested_observation.NestedObservation(
+                    hseagent_sdk.models.nested_observation.NestedObservation(
                         observation_type = null, 
                         observation_type_id = 56, 
                         value = '', 
@@ -47,7 +47,7 @@ class TestPatchedHazardEvaluation(unittest.TestCase):
                         created_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         updated_at = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), )
                     ],
-                examination_type = openapi_client.models.examination_type.ExaminationType(
+                examination_type = hseagent_sdk.models.examination_type.ExaminationType(
                     id = 56, 
                     name = '', 
                     parent = '', 
@@ -56,7 +56,7 @@ class TestPatchedHazardEvaluation(unittest.TestCase):
                 examination_type_id = 56,
                 person_id = 56,
                 physician_id = 56,
-                physician = openapi_client.models.physician.Physician(
+                physician = hseagent_sdk.models.physician.Physician(
                     id = 56, 
                     first_name = '', 
                     last_name = '', 

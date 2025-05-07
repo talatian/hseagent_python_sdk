@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.callback_token_verification import CallbackTokenVerification
+from hseagent_sdk.models.callback_token_verification import CallbackTokenVerification
 
 # TODO update the JSON string below
 json = "{}"

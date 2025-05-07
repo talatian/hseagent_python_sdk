@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.sections_api import SectionsApi
+from hseagent_sdk.api.sections_api import SectionsApi
 
 
 class TestSectionsApi(unittest.TestCase):

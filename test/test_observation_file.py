@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.observation_file import ObservationFile
+from hseagent_sdk.models.observation_file import ObservationFile
 
 class TestObservationFile(unittest.TestCase):
     """ObservationFile unit test stubs"""

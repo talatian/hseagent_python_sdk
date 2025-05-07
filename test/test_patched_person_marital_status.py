@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_person_marital_status import PatchedPersonMaritalStatus
+from hseagent_sdk.models.patched_person_marital_status import PatchedPersonMaritalStatus
 
 class TestPatchedPersonMaritalStatus(unittest.TestCase):
     """PatchedPersonMaritalStatus unit test stubs"""

@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.callback_token_verification import CallbackTokenVerification
+from hseagent_sdk.models.callback_token_verification import CallbackTokenVerification
 
 class TestCallbackTokenVerification(unittest.TestCase):
     """CallbackTokenVerification unit test stubs"""

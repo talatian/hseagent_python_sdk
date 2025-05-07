@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.roles_api import RolesApi
+from hseagent_sdk.api.roles_api import RolesApi
 
 
 class TestRolesApi(unittest.TestCase):

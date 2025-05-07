@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.branch import Branch
+from hseagent_sdk.models.branch import Branch
 
 # TODO update the JSON string below
 json = "{}"

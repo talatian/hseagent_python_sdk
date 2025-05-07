@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.physician import Physician
+from hseagent_sdk.models.physician import Physician
 
 class TestPhysician(unittest.TestCase):
     """Physician unit test stubs"""

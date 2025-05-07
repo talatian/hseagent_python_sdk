@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.api.auth_api import AuthApi
+from hseagent_sdk.api.auth_api import AuthApi
 
 
 class TestAuthApi(unittest.TestCase):

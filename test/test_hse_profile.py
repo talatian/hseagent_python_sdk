@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.hse_profile import HSEProfile
+from hseagent_sdk.models.hse_profile import HSEProfile
 
 class TestHSEProfile(unittest.TestCase):
     """HSEProfile unit test stubs"""

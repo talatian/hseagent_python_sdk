@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.person import Person
+from hseagent_sdk.models.person import Person
 
 class TestPerson(unittest.TestCase):
     """Person unit test stubs"""

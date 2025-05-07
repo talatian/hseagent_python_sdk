@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.marital_status_enum import MaritalStatusEnum
+from hseagent_sdk.models.marital_status_enum import MaritalStatusEnum
 
 class TestMaritalStatusEnum(unittest.TestCase):
     """MaritalStatusEnum unit test stubs"""

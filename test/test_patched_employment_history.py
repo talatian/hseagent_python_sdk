@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.patched_employment_history import PatchedEmploymentHistory
+from hseagent_sdk.models.patched_employment_history import PatchedEmploymentHistory
 
 class TestPatchedEmploymentHistory(unittest.TestCase):
     """PatchedEmploymentHistory unit test stubs"""
@@ -39,20 +39,20 @@ class TestPatchedEmploymentHistory(unittest.TestCase):
                 role = '',
                 department = '',
                 process = [
-                    openapi_client.models.process.Process(
+                    hseagent_sdk.models.process.Process(
                         id = 56, 
                         name = '', 
                         description = '', 
                         hazards = [
-                            openapi_client.models.observation_type.ObservationType(
+                            hseagent_sdk.models.observation_type.ObservationType(
                                 id = 56, 
                                 sections = [
-                                    openapi_client.models.section.Section(
+                                    hseagent_sdk.models.section.Section(
                                         id = 56, 
                                         name = '', 
                                         code = '', 
                                         description = '', 
-                                        section_type = openapi_client.models.section_type.SectionType(
+                                        section_type = hseagent_sdk.models.section_type.SectionType(
                                             id = 56, 
                                             name = '', 
                                             code = '', 
@@ -68,7 +68,7 @@ class TestPatchedEmploymentHistory(unittest.TestCase):
                                 unit = '', 
                                 hint = '', 
                                 examination_types = [
-                                    openapi_client.models.examination_type.ExaminationType(
+                                    hseagent_sdk.models.examination_type.ExaminationType(
                                         id = 56, 
                                         name = '', 
                                         parent = '', 
@@ -87,7 +87,7 @@ class TestPatchedEmploymentHistory(unittest.TestCase):
                     56
                     ],
                 branch_id = 56,
-                branch = openapi_client.models.branch.Branch(
+                branch = hseagent_sdk.models.branch.Branch(
                     id = 56, 
                     name = '', 
                     description = '', 

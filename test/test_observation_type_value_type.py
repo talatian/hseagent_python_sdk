@@ -14,7 +14,7 @@
 
 import unittest
 
-from openapi_client.models.observation_type_value_type import ObservationTypeValueType
+from hseagent_sdk.models.observation_type_value_type import ObservationTypeValueType
 
 class TestObservationTypeValueType(unittest.TestCase):
     """ObservationTypeValueType unit test stubs"""
